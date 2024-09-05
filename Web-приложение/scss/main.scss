@@ -1,0 +1,17 @@
+// base
+@import './base/reset';
+@import './base/vars'; //перменные
+@import './base/base'; // основные стили
+@import './base/mixins';
+
+//blocks
+@import './blocks/header';
+@import './blocks/bestFlowers';
+@import './blocks/catalogCards';
+@import './blocks/seazonCatalog';
+@import './blocks/weAreKnow';
+@import './blocks/reviews';
+@import './blocks/blog';
+@import './blocks/footer';
+@import './baloons/baloonsHeader';
+

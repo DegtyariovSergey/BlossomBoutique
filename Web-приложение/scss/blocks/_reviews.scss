@@ -1,0 +1,121 @@
+.reviews{
+    //display: none;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../Web-приложение/img/reviews/reviews-bg.jpg');
+    height: 600px;
+    justify-content: center;
+}
+.reviews__title{
+    margin-top: 20px;
+    color: var(--d-9-d-9-d-9, #FFF);
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 191.5%; /* 72.77px */
+    letter-spacing: 1.52px;
+    @include mediaTablet{
+        font-size: 28px;
+    }
+    @include mediaPhone {
+        font-size: 20px;
+    }
+}
+.splider__wrap{
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    background: rgba(22, 20, 20, 0.40);
+    width: 1400px;
+    height: 460px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    @include mediaDesktop1{
+        max-width: 900px;
+    }
+    @include mediaTablet {
+        max-width: 400px;
+    }
+    @include mediaPhone {
+        max-width: 345px;
+    }
+    
+}
+.splide__track{
+    display: flex;
+    
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 1200px;
+    @include mediaTablet {
+        max-width: 760px;
+    }
+    @include mediaPhone {
+        max-width: 300px;
+    }
+    
+    
+    
+    
+}
+.splide__slide{
+    @include mediaDesktop1 {
+        margin-left: 260px;
+        margin-right: 260px;
+    }
+    @include mediaTablet {
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+    @include mediaPhone {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+.splide-img{
+    width: 355px;
+    height: 410px;
+    border-radius: 20px;
+    filter: blur(1px) ;
+    transition: 0.2s ease;
+    @include mediaPhone {
+        max-width: 300px;
+    }
+    
+}
+.splide__arrow{
+    background: #72D1A7;
+    width: 70px;
+    height: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+    @include mediaDesktop {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    @include mediaTablet {
+        display: none;
+        width: 50px;
+        height: 50px;
+    }
+    @include mediaPhone {
+        display: none;
+    }
+  }
+  
+  .splide__slide.is-active .splide-img{
+    border-radius: 40px;
+    
+    transition: 0.2s ease ;
+    filter: blur(0px);
+    
+  }
+
+

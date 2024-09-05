@@ -1,0 +1,490 @@
+.flowers__catalog{
+  position: relative;
+  
+}
+.seazon__catalog{
+    //display: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    
+    @include mediaTablet {
+      height: auto;
+    }
+    @include mediaPhone {
+      height: auto;
+    }
+    
+    
+}
+.seazon__poster{
+    display: flex;
+    position: relative;
+    background: $white;
+    
+    width: 100%;
+    min-height: 400px;
+    @include mediaTablet {
+      min-height: 260px;
+      
+    }
+    @include mediaPhone {
+      min-height: 120px;
+    }
+}
+.poster-img{
+  width: 100%;
+}
+
+.seazon__title-shine{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px 48px;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    @include mediaTablet {
+      font-size: 32px;
+    }
+    @include mediaPhone {
+      font-size: 18px;
+      
+    }
+}
+.seazon__title-shine:hover {
+    display: flex;
+    top: 50%;
+    left: 50%;
+    
+    color: #fff;
+    background: linear-gradient(to right, #fff 0, #7e7777 10%, #fff 20%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    
+    white-space: nowrap;
+    
+  }
+  @-moz-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 618px;
+    }
+    100% {
+      background-position: 618px;
+    }
+  }
+  @-webkit-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 618px;
+    }
+    100% {
+      background-position: 618px;
+    }
+  }
+  @-o-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 618px;
+    }
+    100% {
+      background-position: 618px;
+    }
+  }
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 618px;
+    }
+    100% {
+      background-position: 618px;
+    }
+  }
+
+
+
+
+
+
+  .seazon__cards-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    
+    background: $white;
+    border: 4px solid $dark;
+    @include mediaTablet {
+      width: auto;
+      height: auto;
+    }
+    @include mediaPhone {
+      width: auto;
+      height: auto;
+    }
+    @include mediaPhone1 {
+      width: auto;
+      height: auto;
+    }
+  }
+  
+
+  .card__1row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px,1fr));
+    width: 100%;
+    row-gap: 30px;
+    min-height: auto;
+    margin-top:32px ;
+    margin-bottom: 32px;
+    justify-items: center;
+    gap: 100px;
+    flex-shrink: 0;
+    @include mediaDesktop1{
+      grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    }
+    @include mediaTablet {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+      justify-items: center;
+      row-gap: 30px;
+      max-width: 100%;
+      min-height: auto;
+    }
+    
+    @include mediaPhone {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px,1fr));
+      
+      justify-items: center;
+      row-gap: 20px;
+      
+      column-gap: 5px;
+      max-width: 100%;
+      min-height: auto;
+    }
+  }
+
+
+  .seazon__card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 250px;
+    min-height: 420px;
+    @include mediaTablet {
+      width: 180px;
+      min-height: 323px;
+    }
+    
+    @include mediaPhone {
+      width: 140px;
+      min-height: 200px;
+      margin-bottom: 30px;
+    }
+    
+  }
+  .cards__content{
+    max-height: 420px;
+    @include mediaPhone {
+      min-height: 40px;
+    }
+  }
+  
+
+
+.card__img{
+    border-radius: 10px;
+}
+.card__title{
+    color: rgba(0, 0, 0, 0.80);
+    font-family: Comfortaa;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 191.5%; /* 34.47px */
+    letter-spacing: 0.72px;
+    min-height: 138px;
+    @include mediaTablet {
+      font-size: 14px;
+      min-height: 80px;
+    }
+    @include mediaPhone {
+      font-size: 12px;
+      min-height: 92px;
+    }
+}
+.price-wrapp{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 10px;
+  @include mediaPhone {
+    margin-bottom: 6px;
+  }
+}
+.price{
+  color: rgba(0, 0, 0, 0.80);
+  font-family: Comfortaa;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 191.5%; /* 34.47px */
+  letter-spacing: 0.72px;
+  @include mediaTablet {
+    font-size: 16px;
+  }
+  @include mediaPhone {
+    font-size: 12px;
+  }
+}
+.sale{
+  color: rgba(0, 0, 0, 0.30);
+  font-family: Comfortaa;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 191.5%; /* 34.47px */
+  letter-spacing: 0.72px;
+  text-decoration-line:line-through;
+  @include mediaTablet {
+    font-size: 16px;
+  }
+  @include mediaPhone {
+    font-size: 12px;
+  }
+}
+.seazon__card-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  @include mediaTablet {
+    font-size: 10px;
+  }
+  @include mediaPhone {
+    font-size: 12px;
+    height: 24px;
+  }
+  
+}
+
+.card__btn-more{
+  width:120px;
+  
+  text-align:center;
+  display:block;
+  color: $dark;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 191.5%; /* 30.64px */
+  letter-spacing: 0.64px;
+  text-decoration: none;
+  background-color: $white;
+  border: $dark 1px solid;
+  
+  
+  padding: 0px;
+  margin: auto;
+  transition: .5s;
+  border-radius: 20px ;
+  @include mediaTablet {
+    font-size: 10px;
+  }
+  @include mediaPhone {
+    height: 20px;
+    font-size: 10px;
+    font-weight: 700;
+    width: 140px;
+    
+  }
+}
+.card__btn-more:hover{
+  top: 5px;
+  transition: .5s;
+  background-color:$dark;
+  color: $white;
+  
+  border-radius: 0px;
+}
+.card__btn-buy{
+  width:120px;
+  
+  text-align:center;
+  display:block;
+  color: $dark;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 191.5%; /* 30.64px */
+  letter-spacing: 0.64px;
+  text-decoration: none;
+  background-color: $white;
+  border: $dark 1px solid;
+  
+  
+  padding: 0px;
+  margin: auto;
+  transition: .5s;
+  border-radius: 20px ;
+  @include mediaTablet {
+    line-height: 150%;
+    max-height: 20px;
+    font-size: 12px;
+    text-align:center;
+  }
+  @include mediaPhone {
+    height: 20px;
+    font-size: 10px;
+    font-weight: 700;
+    
+  }
+}
+.card__btn-buy:hover{
+  top: 5px;
+transition: .5s;
+background-color:$dark;
+color: $white;
+
+border-radius: 0px;
+}
+
+
+
+
+.hystmodal {
+  
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center; /* см. ниже */
+  align-items: center;
+  z-index: 99;
+  /* Чтобы окно не прилипало к границе
+  браузера установим отступы */
+  padding:30px 0;
+}
+.hystmodal__wrap {
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: 100%;
+  min-height: 100%;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.hystmodal__window {
+  position: relative;
+  
+  height: 300px;
+  background-color: #524E4E;
+  
+  margin: auto;
+  color: $white;
+  border-radius: 16px;
+  padding: 30px;
+  cursor: default;
+
+  margin: 50px 0;
+  flex-shrink: 0;
+  flex-grow: 0;
+  
+  width: 600px;
+  max-width: 100%;
+  overflow: visible;
+  transform: scale(0);
+  transition: transform 0.4s ease 0s, opacity 0.6s ease 0s;
+  
+  opacity: 0;
+}
+.hystmodal--active{
+  visibility: visible;
+}
+.hystmodal--active .hystmodal__window{
+  transform: scale(1);
+  opacity: 1;
+}
+
+
+.hystmodal__shadow{
+  position: fixed;
+  border:none;
+  display: block;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 98;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  background-color: black;
+}
+/* активная подложка */
+.hystmodal__shadow--show{
+  pointer-events: auto;
+  opacity: 0.6;
+}
+.modal__title {
+  margin-bottom: 30px;
+}
+.modal__close {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  outline: 1px solid transparent;
+  outline-offset: 3px;
+  transition: outline-color .15s ease-in-out;
+  border-radius:3px ;
+  padding: 0;
+  text-align: center;
+}
+.modal__img{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+
+

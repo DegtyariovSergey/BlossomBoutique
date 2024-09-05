@@ -1,0 +1,439 @@
+.weAreKnow{
+    //display: none;
+    height: 960px;
+    background: radial-gradient(50% 50% at 50% 50%, #3F9870 16.67%, #F8F8F8 77.6%);
+    
+    @include mediaDesktop1 {
+        max-width: 100%;
+        height: auto;
+    }
+    @include mediaTablet {
+        max-width: 100%;
+        height: auto;
+    }
+    @include mediaPhone {
+        max-width: 100%;
+        height: auto;
+    }
+    
+}
+
+.weAreKnow__line-item1{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 50px;
+    @include mediaTablet {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    @include mediaPhone {
+        margin-top: 65px;
+        margin-left: 10px;
+    }
+
+}
+.weAreKnow__line-item-g{
+    width: 300px;
+    height: 1px;
+    background: $dark;
+    @include mediaTablet {
+        width: 200px;
+    }
+    @include mediaPhone {
+        width: 80px;
+    }
+}
+.weAreKnow__line-item-v{
+    width: 1px;
+    height: 300px;
+    background: $dark;
+    @include mediaTablet {
+        height: 200px;
+    }
+    @include mediaPhone {
+        height: 80px;
+    }
+}
+.weAreKnow__line-item2{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    right:0;
+    margin-right: 50px;
+    margin-top: 600px;
+    @include mediaDesktop1 {
+        margin-top: 680px;
+    }
+    @include mediaTablet {
+        display: none;
+    }
+    @include mediaPhone {
+        margin-right: 10px;
+        margin-top: 500px;
+    }
+    
+
+}
+.weAreKnow__line-item-g2{
+    width: 300px;
+    height: 1px;
+    background: $dark;
+    margin-top: 300px;
+    @include mediaTablet {
+        width: 200px;
+        
+    }
+    @include mediaPhone {
+        width: 80px;
+    }
+}
+.weAreKnow__line-item-v2{
+    width: 1px;
+    height: 300px;
+    background: $dark;
+    @include mediaTablet {
+        height: 200px;
+        margin-top: 101px;
+    }
+    @include mediaPhone {
+        height: 80px;
+        margin-top: 221px;
+    }
+    
+}
+.weAreKnow__ico-flower{
+    position: absolute;
+    right: 0;
+    @include mediaTablet {
+        width: 150px;
+        height: 200px;
+        margin-top: 20px;
+        right: 0;
+    }
+    @include mediaPhone {
+        width: 80px;
+        height: 200px;
+        margin-top: 70px;
+    }
+    
+    
+}
+.weAreKnow__wrapper{
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+    
+}
+.weAreKnow__title{
+    margin-top: 20px;
+    color: #000;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 191.5%; /* 72.77px */
+    letter-spacing: 1.52px;
+    @include mediaDesktop {
+        font-size: 32px;
+        margin-top: 60px;
+    }
+    @include mediaDesktop1 {
+        font-size: 32px;
+        margin-top: 60px;
+    }
+    @include mediaTablet {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    @include mediaPhone {
+        font-size: 16px;
+        margin-top: 80px;
+        
+    }
+}
+.weAreKnow__images{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 100%;
+    width: 440px;
+    height: 440px;
+    @include mediaTablet {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        margin-top: 80;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    @include mediaPhone {
+        position: relative;
+        width: 280px;
+        height: 280px;
+        margin-top: 80;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+    }
+    
+}
+
+.sircuit__line{
+    display: flex;
+    flex-direction: row;
+    
+}
+.weAreKnow__img-item1{
+    
+    width: 200px;
+    height: 150px;
+    border-radius: 1000px 0 0 0;
+    margin-right: 2px;
+    @include mediaPhone {
+        width: 140px;
+        height: 120px;
+    }
+}
+.weAreKnow__img-item2{
+    
+    width: 200px;
+    height: 150px;
+    border-radius: 0 1000px 0 0;
+    @include mediaPhone {
+        width: 140px;
+        height: 120px;
+    }
+}
+
+.weAreKnow__img-item3{
+    margin-right: 2px;
+    width: 200px;
+    height: 130px;
+    border-radius: 0 0 0 0;
+    @include mediaPhone {
+        width: 140px;
+        height: 100px;
+    }
+    
+}
+
+.weAreKnow__img-item4{
+    
+    width: 200px;
+    height: 130px;
+    border-radius: 0 0 0 0;
+    @include mediaPhone {
+        width: 140px;
+        height: 100px;
+    }
+}
+
+.weAreKnow__img-item5{
+    margin-right: 2px;
+    width: 200px;
+    height: 150px;
+    border-radius: 0 0 0 1000px;
+    @include mediaPhone {
+        width: 140px;
+        height: 120px;
+    }
+}
+
+.weAreKnow__img-item6{
+    
+    width: 200px;
+    height: 150px;
+    border-radius: 0 0 1000px 0 ;
+    @include mediaPhone {
+        width: 140px;
+        height: 120px;
+    }
+}
+.weAreKnow__advantages-wrap{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include mediaDesktop1 {
+        width: auto;
+       height: auto;
+       margin-top: 0px;
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(480px,1fr));
+   }
+    @include mediaTablet {
+         width: auto;
+        height: auto;
+        margin-top: 0px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    }
+    @include mediaPhone {
+        width: auto;
+        height: auto;
+        margin-top: 0px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    }
+}
+.weAreKnow__advantages-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 70px;
+    @include mediaTablet {
+        width: 180px;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    @include mediaPhone {
+        margin-top: 20px;
+        
+    }
+}
+.weAreKnow__advantages-card{
+    display: flex;
+    flex-direction: row;
+    width: 488;
+    height: 130px;
+    flex-shrink: 0;
+    @include mediaPhone {
+        height: 80px;
+        
+    }
+}
+.card__point{
+    position: relative;
+    width: 130px;
+    height: 130px;
+    background-color: rgba(25, 71, 45, 0.80);
+    border-radius: 50%;
+    margin-right: 15px;
+    @include mediaDesktop {
+        width: 90px;
+        height: 90px;
+    }
+    @include mediaDesktop1 {
+        width: 90px;
+        height: 90px;
+    }
+    @include mediaTablet {
+        width: 50px;
+        height: 50px;
+    }
+    @include mediaPhone {
+        width: 40px;
+        height: 40px;
+    }
+   
+}
+.card__point-num{
+    position: absolute;
+    
+    left: 0;
+    right: 0;
+    text-align: center;
+   
+    line-height: 130px;
+    color: $white;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    
+    letter-spacing: 2px;
+    @include mediaDesktop {
+        font-size: 32px;
+        line-height: 90px;
+    }
+    @include mediaDesktop1 {
+        font-size: 32px;
+        line-height: 90px;
+    }
+    @include mediaTablet {
+        font-size: 24px;
+        line-height: 55px;
+    }
+    @include mediaPhone {
+        font-size: 18px;
+        line-height: 42px;
+    }
+}
+.weAreKnow__advantages-card-text-wrap{
+    display: flex;
+    flex-direction: column;
+    @include mediaTablet {
+        max-width: 180px;
+    }
+    @include mediaPhone {
+        max-width: 180px;
+    }
+
+}
+.weAreKnow__advantages-card-title{
+    width: 343px;
+    height: 100px;
+    color: $dark;
+    font-family: Comfortaa;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 191.5%; 
+    letter-spacing: 1.2px;
+    @include mediaDesktop {
+        font-size: 20px;
+        width: 300px;
+    }
+    @include mediaDesktop1 {
+        font-size: 20px;
+        width: 300px;
+    }
+    @include mediaTablet {
+        font-size: 14px;
+        max-width: 180px;
+    }
+    @include mediaPhone {
+        height: 10px;
+        font-size: 12px;
+        max-width: 180px;
+    }
+}
+.weAreKnow__advantages-card-text{
+    margin-top: 18px;
+    width: 343px;
+    height: 100px;
+    flex-shrink: 0;
+    color: $dark;
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; 
+    @include mediaDesktop {
+        font-size: 14px;
+        width: 300px;
+    }
+    @include mediaDesktop1 {
+        font-size: 14px;
+        width: 300px;
+    }
+    @include mediaTablet {
+        font-size: 12px;
+        width: 180px;
+    }
+    @include mediaPhone {
+        font-size: 10px;
+        width: 180px;
+    }
+}
+

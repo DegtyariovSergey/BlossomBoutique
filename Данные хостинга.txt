@@ -1,0 +1,10 @@
+ bx-course8.co75699.tmweb.ru 
+Хостинг: 
+IP: 5.23.50.132
+Хост: vh342.timeweb.ru
+Логин: co75699_bx8
+Пароль: BKa1RxpF
+
+БД:
+User: co75699_bx8
+Pass: n79HuP8C

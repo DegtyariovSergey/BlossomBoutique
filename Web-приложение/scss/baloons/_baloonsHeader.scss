@@ -1,0 +1,239 @@
+.baloons{
+       
+    background: url(../Web-приложение/img/baloons/baloons-bg.jpg) no-repeat;
+    width: 100%;
+    @include mediaDesktop1 {
+        height: auto;
+    }
+    @include mediaTablet {
+        height: auto;
+    }
+    @include mediaPhone {
+        height: auto;
+    }
+    
+}
+.baloons__wrapper{
+    display: flex;
+    flex-direction: row;
+    height: 650px;
+    @include mediaDesktop1 {
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    @include mediaTablet {
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    @include mediaPhone {
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.baloons__content-wrap{
+    
+    display: flex;
+    flex-direction: column;
+    width: 780px;
+    margin-left: 80px;
+    margin-top: 60px;
+    margin-right: 128px;
+    @include mediaDesktop {
+        margin-right: 60px;
+    }
+    @include mediaDesktop1 {
+        display: none;
+    }
+    @include mediaTablet {
+        display: none;
+    }
+    @include mediaPhone {
+        display: none;
+    }
+    
+}
+.baloons__title{
+    color: var(--d-9-d-9-d-9, #FFF);
+    font-family: Comfortaa;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 80px;
+    @include mediaDesktop1 {
+        display: none;
+    }
+    @include mediaTablet {
+        display: none;
+    }
+    @include mediaPhone {
+        display: none;
+    }
+}
+.baloons__text{
+    color: var(--d-9-d-9-d-9, #FFF);
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 174%; 
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    @include mediaDesktop {
+        font-size: 16px;
+    }
+    @include mediaDesktop1 {
+        display: none;
+    }
+    @include mediaTablet {
+        display: none;
+    }
+    @include mediaPhone {
+        display: none;
+    }
+}
+.baloons__content-line1{
+    width: 405px;
+    height: 2px;
+
+    background: rgba(240, 241, 241, 0.70);
+    margin-bottom: 10px;
+    @include mediaDesktop1{
+        display: none;
+    }
+    @include mediaTablet {
+        display: none;
+    }
+    @include mediaPhone {
+        display: none;
+    }
+}
+.baloons__content-line2{
+    width: 186px;
+    height: 2px;
+
+    background: rgba(240, 241, 241, 0.70);
+    @include mediaDesktop1{
+        display: none;
+    }
+    @include mediaTablet {
+        display: none;
+    }
+    @include mediaPhone {
+        display: none;
+    }
+}
+
+.baloons__slider-wrap{
+    display: flex;
+    position: relative;
+    width: 740px;
+    height: 500px;
+    
+    margin-top: 60px;
+    border-radius: 30px;
+    border: 1px solid #FFF;
+    @include mediaDesktop1{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 120px;
+    }
+    @include mediaTablet {
+        width: 460px;
+        height: 380px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    @include mediaPhone {
+        width: 340px;
+        height: 280px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+}
+.baloon{
+    display: flex;
+    max-width: 664px;
+    max-height: 480px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    overflow: hidden;
+}
+.baloon__slide{
+    
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    max-height: 456px;
+    margin-top: 22px;
+    @include mediaTablet{
+        margin-top: auto;
+        margin-bottom: auto;
+        align-items: center;
+    }
+    @include mediaPhone {
+        margin-top: auto;
+        margin-bottom: auto;
+        align-items: center;
+    }
+    
+}
+.slider-foto{
+    border-radius: 60px;
+}
+
+
+.baloons__buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70px;
+    height: 24px;
+    margin-top: 540px;
+    margin-left: 30px;
+    @include mediaDesktop {
+        margin-right: 20px;
+        width: 70px;
+    }
+    @include mediaDesktop1 {
+        margin-top: 490px;
+        width: 60px;
+        margin-left: 20px;
+    }
+    @include mediaTablet {
+        display: none;
+    }
+    @include mediaPhone {
+        display: none;
+    }
+}
+.button-prev, 
+.button-next{
+    
+    color: $white;
+    position:relative;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.button-prev::after{
+    display: none;
+ }
+ .button-next::after{
+     display: none;
+ }
+ .button-next{
+     background-image: url("../Web-приложение/img/bestFlower_slider/slider_nav-ico/arrow-right.svg");
+ }
+ .button-prev{
+     background-image: url("../Web-приложение/img/bestFlower_slider/slider_nav-ico/arrow-left.svg");
+ }
